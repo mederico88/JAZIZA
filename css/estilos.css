@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    color: black;
+    font-family: 'Arial';
+    font-size: 17pt;
+    margin-bottom: 10px;
+}
+
+p{
+    color: black;
+    font-family: 'Arial';
+    font-size: 10pt;
+}
+
+input[type="email"], input[type="password"], input[type="text"]{
+    display: block;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    outline: none;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+:focus{
+    outline: none;
+}
+
+a{
+    font-family: Arial;
+    font-size: 8pts;
+    color:blue;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label{
+    color: 1b1b1b;
+    font-family: Arial;
+    font-size: 10pt;
+    display: block;
+    margin-bottom: 20px;
+}
+#pantalla_inicial{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagen/hermoso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pantalla_inicial::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ventana{
+    width: 400px;
+    height: 360px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.logo{
+   padding: 20px 144px;
+}
+
+.imagen_logo{
+    width: 100px;
+}
+
+#textosLoging{
+    position: relative;
+}
+
+#textosLoging>div{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0 44px;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.divbutton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.divbtnlogin{
+    margin-top: 60px;
+}
+
+.btnformlogin{
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    font-size: 11pt;
+    padding: 8px 20px;
+    border: 0;
+    letter-spacing: 1pt;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 20px;
+}
+
+.btnformlogin:active{
+    position: relative;
+    top: 2px;
+    box-shadow: inset black;
+}
+
+
+.mailescrito{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#btnprev{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+#btnprev i{
+    color: rgb(66, 65, 65);
+}
+#btnprev:hover{
+    background-color: rgb(168, 167, 167);
+}
+
+#spanmail{
+    font-size: 12pt;
+}
+
+.btnAcciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnAcciones>button{
+    width: 49%;
+}
+#btnpreviapantalla{
+    background-color: rgb(47, 165, 47);
+}
+
+#btncancelar{
+    background-color: rgb(173, 166, 166);
+}
+
+.opacidad0{
+    opacity: 0;
+}
+.opacidad1{
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.ventanaActiva{
+    left: 0 !important;
+}
+.ventanaLeft{
+    left: -100% !important;
+}
+.ventanaRight{
+    left: 100% !important;
+}
+@media(max-width:600px){
+    #ventana{
+        width: 100%;
+        height: 100%;
+        min-width: 375px;
+    }
+}

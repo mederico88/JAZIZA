@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>formulario</title>
+</head>
+<body>
+    <section id="pantalla_inicial">
+        <div id="ventana" class="opacidad0">
+            <div class="logo">
+                <img src="imagen/LOGO.png" class="imagen_logo" alt="logo">
+            </div>
+            <div id="textosLoging">
+                <div id="mail" class="">
+                    <h2><i>Iniciar sesi&oacute;n</i></h2>
+                    <div id="alertaMail" style="display: none;"></div>
+                    <input type="email" id="mailUsua" name="mailUsua" placeholder="Correo Electr&oacute;nico">
+                    <p><i>No tienes una cuenta? <a href="#" id="crearCuenta" > Crear Una.</a></i></p>
+                    <div class="divbutton divbtnlogin">
+                        <button type="button" id="btnnex" class="btnformlogin" >Siguiente</button>
+                    </div>
+                </div>
+                <div id="contrasena">
+                    <div class="mailescrito">
+                        <p><button type="button" id="btnprev"><i class="fa fa-chevron-left"></i></button><span id="spanmail">aaaa@aa.aa"</span></p>
+                    </div>
+                    <h2>Contrase&ntilde;a</h2>
+                    <div id="alertacontras" style="display: none;"></div>
+                    <input type="password" id="passusuario" name="passusuario" placeholder="Escriba su contrase&ntilde;a">
+                    <label><input type="checkbox" name="sesiontrue" value="true"> Mantener la sesi&oacute;n iniciada</label>
+                    <p><a href="#" id="linkRecuperarContras"> ¿Olvid&oacute; su contrase&ntilde;a?</a></p> 
+                    <div class="divbutton">
+                        <button type="button" id="btnLoging" class="btnformlogin">Iniciar sesi&oacute;n</button>
+                    </div>
+                </div>
+                <div id="registro">
+                    <h2>Crear una Cuenta</h2>
+                    <div id="alertaregistro" style="display: none;"></div>
+                    <div>
+                        <input type="text" name="nombreusuario" id="nombreusuario" value="" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <input type="email" name="mailnuevousiaruo" id="mailnuevousiaruo" value="" placeholder="Correo Electr&oacute;nico">
+                    </div>
+                    <div>
+                        <input type="password" name="passnuevousuario" id="passnuevousuario" value="" placeholder="Contrase&ntilde;a">
+                    </div>
+                    <div class="btnAcciones">
+                        <button type="button" id="btnpreviapantalla" class="btnformlogin"> Atr&aacute;s</button>
+                        <button type="button" id="btnregistrar" class="btnformlogin"> Registrarse</button>
+                    </div>
+                </div>
+                <div id="recuperar_contranesa">
+                    <h2>Recuperar Contrase&ntilde;a</h2>
+                    <p>Se enviara un correo electronico con instrucciones para recuperar su cuenta.</p><br>
+                    <div id="alertaenviocorreo" style="display: none;"></div>
+                    <input type="email" name="correoenviado" id="correoenviado" placeholder="Correo Electr&oacute;nico">
+                    <div class="btnAcciones">
+                        <button type="button" id="btncancelar" class="btnformlogin"> Cancelar</button>
+                        <button type="button" id="btnenviarcorreo" class="btnformlogin"> Enviar</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <script src="js/formulas.js"></script>
+</body>
+</html>
+
